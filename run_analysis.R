@@ -7,7 +7,6 @@ trainy <- read.table("./train/y_train.txt", header = F)
 trainsubject <- read.table("./train/subject_train.txt", header = F)
 features <- read.table("features.txt", header = F)
 activity_labels <- read.table("activity_labels.txt", header = F)
-head(testy)
 names(trainx) <- features[,2]
 names(testx) <- features[,2]
 names(trainy) <- "Activity"
